@@ -1,0 +1,43 @@
+body{
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.sitelogo{
+    width: 50%;
+    float: left;
+}
+
+
+.navlink{
+    /* width: 40%; */
+    float: right;
+}
+header{
+    padding-top: 25px;;
+}
+header a{
+    padding-left: 20px;
+}
+.topbox{
+    background-color: lightgrey;
+    float: left;
+    padding: 35px;
+    width:98%;
+    
+
+}
+.para{
+    text-align: left;
+    width: 20%;
+}
+.card{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.card1 .card2 .card3{
+    display: flow-root;
+}
