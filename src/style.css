@@ -1,43 +1,188 @@
-body{
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
+@media screen and (min-width: 1px)
+{
+    #header /*Header div*/
+    {
+        /* border: solid 1px magenta; */
+        padding-left: 7%;
+    }
+    nav /*nav bar main*/
+    {
+        overflow: hidden;
+        /* border: solid 1px red; */
+        padding-right: 2%;
+    }
+    nav ul /*unordered list in nav*/
+    {
+        list-style: none;
+        float: right;
+    }
+    nav ul li /*unordered list element in nav*/
+    {
+        display: inline;
+        padding: 10px;
+    }
+    h3 /*we power ecomm*/
+    {
+        padding-top: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #main /*main div*/
+    {
+        margin-top: 1%;
+        /* padding: 3% 0% 0% 0%; */
+        /* border: solid 1px yellow; */
+        overflow: hidden;
+    }
+    #content /*main content*/
+    {
+        background-color: rgb(189, 189, 189);
+        overflow: hidden;
+        /* border: solid 1px green; */
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* float: center; */
+    }
+    #content h3 /*content heading*/
+    {
+        width: 35%;
+        margin-left: 2%;
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+    #content-left-float /*content shifted left above cards*/
+    {
+        float: left;
+        text-align: justify;
+        width: 25%;
+        /* border: solid 1px blue; */
+        margin: 0% 0% 5% 2%;
+    }
+    #learn-more /*button*/
+    {
+        /* border: none; */
+        padding: 4px 7px;
+    }
+    #main-bottom /*cards main div*/
+    {
+        /* float: left; */
+        /* border: blue solid 1px; */
+        display: flex;
+        width: 100%;
+    }
+    .card /*individual card*/
+    {
+        /* border: solid 1px green; */
+        text-align: center;
+        width: 25%;
+        /* float: left; */
+        margin-left: 6%;
+        margin-right: 0%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    .card-bg /*card background color*/
+    {
+        background-color: rgb(189, 189, 189);
+        padding: 30% 10%;
+        margin-bottom: 5%;
+        width:90%;
+    }
+    h5 /*card heading*/
+    {
+        margin: 2% 0% 3% 0%;
+        font-size: 18px;
+    }
+    .card-content /*card content below heading*/
+    {
+        margin: 2% 0% 2% 0%;
+        padding: 1%;
+        width: 90%;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+    .learn-more /*link in card*/
+    {
+        /* border: none; */
+        padding: 4px 7px;
+        font-size: 14px;
+    }
+    #footer /*footer with subs input submit*/
+    {
+        /* border: solid 1px purple; */
+        background-color: rgb(189, 189, 189);
+        text-align: center;
+        padding: 2% 5%;
+    }
+    input /*input box*/
+    {
+        width: 40%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+    }
+    h4 /*subscribe us*/
+    {
+        margin: 0% 2% 0% 0%;
+        display: inline;
+        /* padding-right: 1%; */
+    }
+    .submit /*submit button*/
+    {
+        background-color: rgb(51, 165, 237);
+        border: none;
+        color: white;
+        padding: 8px 10px;
+        margin-left: 1%;
+        width: 15%;
+        transition-duration: 0.11s;
+    }
+    .submit:hover
+    {
+        background-color: white;
+        color: rgb(51,165,237);
+        border: 2px solid rgb(51,165,237);
+    }
+    footer /*footer*/
+    {
+        display:flexbox;
+        overflow: hidden;
+        margin: 0% 7% 0% 7%;
+        font-size: 12px;
+    }
+    #foot-left /*foot content left*/
+    {
+        float: left;
+    }
+    #foot-right /*foot content right*/
+    {
+        float: right;
+    }
 }
-
-
-.sitelogo{
-    width: 50%;
-    float: left;
-}
-
-
-.navlink{
-    /* width: 40%; */
-    float: right;
-}
-header{
-    padding-top: 25px;;
-}
-header a{
-    padding-left: 20px;
-}
-.topbox{
-    background-color: lightgrey;
-    float: left;
-    padding: 35px;
-    width:98%;
-    
-
-}
-.para{
-    text-align: left;
-    width: 20%;
-}
-.card{
-    display: flex;
-    width: 100%;
-    text-align: center;
-}
-.card1 .card2 .card3{
-    display: flow-root;
+@media screen and (max-width: 511px)
+{
+    #content h3
+    {
+        width: 65%;
+    }
+    #content-left-float
+    {
+        width:75%;
+    }
+    #main-bottom
+    {
+        display: block;
+        margin: auto;
+    }
+    .card
+    {
+        width: 75%;
+    }
+    .card-bg
+    {
+        width: 35%;
+        padding: 20%;
+        margin: auto;
+    }
 }
